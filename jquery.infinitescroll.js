@@ -499,9 +499,8 @@
                 box = $(opts.contentSelector).is('table') ? $('<tbody/>') : $('<div/>');
 
                 if (!!opts.nextUrl) {
-                    //instance._debug("");
                     desturl = opts.nextUrl();
-                    console.log('nextUrl: ', desturl);
+                    instance._debug('nextUrl: ', desturl);
                 } else {
                     desturl = path.join(opts.state.currPage);
                 }
