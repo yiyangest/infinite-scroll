@@ -196,6 +196,11 @@
                 return;
             }
 
+            // if nextUrl is defined, so we do not need to parse the path
+            if (!!opts.nextUrl) {
+                return path;
+            }
+
             if (!!opts.pathParse) {
 
                 this._debug('pathParse manual');
